@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+openapi-generator generate \
+	-i https://stoplight.io/api/v1/projects/holodex/holodex/nodes/holodex_v2.yaml \
+	-g go \
+	--git-user-id "watsonindustries" \
+	--git-repo-id "go-holodex" \
+	--additional-properties=packageName=holodex \
+	-o ./
+
+go mod tidy
