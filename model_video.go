@@ -41,6 +41,7 @@ type Video struct {
 	// Number of tagged songs for this video
 	Songcount *float32 `json:"songcount,omitempty"`
 	ChannelId *string `json:"channel_id,omitempty"`
+	ChannelId *Channel `json:"channel,omitempty"`
 }
 
 // NewVideo instantiates a new Video object
