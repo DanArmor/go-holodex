@@ -1,4 +1,4 @@
-module github.com/watsonindustries/go-holodex
+module github.com/DanArmor/go-holodex
 
 go 1.13
 
